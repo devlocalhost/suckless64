@@ -55,6 +55,7 @@ note: you might not need some of these. if you dont, youll need to remove them f
   - SchemeSelHighlight and SchemeNormHighlight color is #7289da
 
 - dwm
+  - you take a screenshot using the prt sc key (print screen)
   - modkey is the windows logo key
   - you kill apps using modkey + q instead of c
   - default cyan color replaced with #7289da (discords old color - blurple)
@@ -75,6 +76,8 @@ note: you might not need some of these. if you dont, youll need to remove them f
   
 - surf
   - homepage set to google.com
+  
+font, xinitrc and wallpaper included
   
 # note
 all suckless apps are compiled, but on a 32bit laptop! you will have to recompile if you have a 64bit computer
