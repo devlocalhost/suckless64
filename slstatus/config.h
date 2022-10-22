@@ -65,15 +65,15 @@ static const char unknown_str[] = "??";
  */
 static const struct arg args[] = {
 	/* function     format          argument */
-	{ keymap,       " %s",          NULL },
+	{ keymap,       "  %s",        NULL },
     { separator,    "%s",           " | " },
-    { ram_free,     "Free %s",       NULL },
+    { ram_free,     " %s",         NULL },
     { separator,    "%s",           " | " },
-    { battery_perc, "Batt %s",      "BAT0" },
+    { battery_perc, " %s",         "BAT0" },
     { separator,    "%s",           " | " },
-    { temp,         "CTemp %s",     "/sys/class/thermal/thermal_zone0/temp" },
+    { temp,         " %s",         "/sys/class/thermal/thermal_zone0/temp" },
     { separator,    "%s",           " | " },
-    { wifi_essid,   "Wi %s",        "wlan0" },
+    { wifi_essid,   " %s",         "wlan0" },
     { separator,    "%s",           " | " },
-    { datetime,     "%s ",           "%a %-d.%b.%y | %I.%M.%S %p" }
+    { datetime,     "%s ",          "%a %-d/%m/%y | %I:%M:%S %p" }
 };
