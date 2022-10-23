@@ -48,7 +48,7 @@ note: you might not need some of these. if you dont, youll need to remove them f
 5. picom (transparency)
 6. feh (setting wallpaper)
 7. xinput (changing my mouses sensitivity, might not be needed)
-8. fish shell (needed for st)
+8. fish shell (needed for st) (??)
 
 # info - whats customized/different from stock app
 - dmenu
