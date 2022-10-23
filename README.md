@@ -15,24 +15,25 @@ every (except slstatus) suckless app has patches. theyre located in APP/patches 
   - dmenu-center
   - dmenu-highlight
   - dmenu-gruvbox is __**NOT**__ applied
-  
+
 - dwm
   - dwm-hide_vacant_tags
-  
+  - dwm-systray-20210418
+
 - slstatus
   - none
-  
+
 - st
   - st-alpha
   - st-gruvbox-dark is __**NOT**__ applied
   - st-scrollback-mouse
   - st-anysize
   - st-scrollback
-  
+
 - surf
   - surf-homepage
   - surf-history
-  
+
 # preview
 ![dwm desktop, with st, and slstatus visible](pre/dwm_st_slstatus_preview.png)
 ![dmenu preview](pre/dmenu_preview.png)
@@ -41,12 +42,13 @@ every (except slstatus) suckless app has patches. theyre located in APP/patches 
 note: you might not need some of these. if you dont, youll need to remove them from the config files
 
 1. flameshot (for taking screenshots)
-2. pactl (for controlling volume)
-3. kgx (alternatime terminal app, might not be needed)
-4. picom (transparency)
-5. feh (setting wallpaper)
-6. xinput (changing my mouses sensitivity, might not be needed)
-7. fish shell (needed for st)
+2. simplescreenrecorder (screen recorder)
+3. pactl (for controlling volume)
+4. kgx (alternatime terminal app, might not be needed)
+5. picom (transparency)
+6. feh (setting wallpaper)
+7. xinput (changing my mouses sensitivity, might not be needed)
+8. fish shell (needed for st)
 
 # info - whats customized/different from stock app
 - dmenu
@@ -62,10 +64,10 @@ note: you might not need some of these. if you dont, youll need to remove them f
   - only 5 tags instead of 9
   - font replaced with JetBrainsMono-Regular, size 10
   - terminal launches with modkey + return (enter key) instead of modkey and shift + return, modkey and shift + return lauches gnome console (aka kgx)
-  
+
 - slstatus
   - nothing
-  
+
 - st
   - to scroll 2 lines you use shift + mouse scroll, 4 lines ctrl + mscroll, ctrl + pg up/down 1 page or 8 lines (i dont remember)
   - shell is set to fish
@@ -73,11 +75,11 @@ note: you might not need some of these. if you dont, youll need to remove them f
   - tabspaces set to 4
   - alpha set to 0.7
   - cursor shape is set to bar (|)
-  
+
 - surf
   - homepage set to google.com
-  
+
 font, xinitrc and wallpaper included
-  
+
 # note
 all suckless apps are compiled, but on a 32bit laptop! you will have to recompile if you have a 64bit computer

@@ -65,7 +65,8 @@ static const char unknown_str[] = "??";
  */
 static const struct arg args[] = {
 	/* function     format          argument */
-	{ keymap,       "  %s",        NULL },
+    { separator,    "%s",           "| " },
+	{ keymap,       " %s",         NULL },
     { separator,    "%s",           " | " },
     { ram_free,     " %s",         NULL },
     { separator,    "%s",           " | " },
