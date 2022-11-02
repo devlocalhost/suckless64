@@ -9,6 +9,9 @@ static char *font = "JetBrainsMono-Regular:pixelsize=14:antialias=true:autohint=
 /* static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true"; */
 static int borderpx = 2;
 
+/* how many lines to scroll using mouse scroll wheel */
+static const int mouseScroll = 4;
+
 /*
  * What program is execed by st depends of these precedence rules:
  * 1: program passed with -e
@@ -182,8 +185,8 @@ static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
 	{ ShiftMask,            Button4, kscrollup,      {.i = 2} },
 	{ ShiftMask,            Button5, kscrolldown,    {.i = 2} },
-	{ ControlMask,          Button4, kscrollup,      {.i = 4} },
-	{ ControlMask,          Button5, kscrolldown,    {.i = 4} },
+	{ XK_ANY_MOD,           Button4, kscrollup,      {.i = mouseScroll} },
+	{ XK_ANY_MOD,           Button5, kscrolldown,    {.i = mouseScroll} },
 
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },

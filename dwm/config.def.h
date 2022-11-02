@@ -64,10 +64,9 @@ static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray
 static const char *termcmd[]  = { "st", NULL };
 
 /* my own commands */
-static const char *volup[]       = { "pactl", "set-sink-volume", "0", "+2%", NULL };
-static const char *voldown[]     = { "pactl", "set-sink-volume", "0", "-2%", NULL };
+static const char *volup[]       = { "pactl", "set-sink-volume", "0", "+1%", NULL };
+static const char *voldown[]     = { "pactl", "set-sink-volume", "0", "-1%", NULL };
 static const char *screenshot[]  = { "flameshot", "gui", NULL };
-static const char *kgx[]         = { "kgx", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -76,12 +75,9 @@ static const Key keys[] = {
     { 0,         XF86XK_AudioLowerVolume,      spawn,         {.v = voldown } },
     { 0,         XF86XK_AudioRaiseVolume,      spawn,         {.v = volup } },
     { 0,                       XK_Insert,      spawn,         {.v = screenshot } },
-    { MODKEY|ShiftMask,        XK_Return,      spawn,         {.v = kgx } },
-
-    /* my own keys */
-
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
+
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },

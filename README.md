@@ -44,33 +44,33 @@ note: you might not need some of these. if you dont, youll need to remove them f
 1. flameshot (for taking screenshots)
 2. simplescreenrecorder (screen recorder)
 3. pactl (for controlling volume)
-4. kgx (alternatime terminal app, might not be needed)
-5. picom (transparency)
-6. feh (setting wallpaper)
-7. xinput (changing my mouses sensitivity, might not be needed)
-8. fish shell (needed for st) (??)
+4. picom (transparency)
+5. feh (setting wallpaper)
+6. xinput (changing my mouses sensitivity, might not be needed)
+7. fish shell (needed for st) (??)
 
-# info - whats customized/different from stock app
+# info - whats customized/included
 - dmenu
   - you paste using ctrl + v, instead of shift ctrl + y
   - number of lines is 17, border_width is 4
   - SchemeSelHighlight and SchemeNormHighlight color is #7289da
 
 - dwm
+  - no xinerama support
   - you take a screenshot using the prt sc key (print screen)
   - modkey is the windows logo key
   - you kill apps using modkey + q instead of c
   - default cyan color replaced with #7289da (discords old color - blurple)
-  - only 5 tags instead of 9
+  - 5 tags instead of 9
   - font replaced with JetBrainsMono-Regular, size 10
-  - terminal launches with modkey + return (enter key) instead of modkey and shift + return, modkey and shift + return lauches gnome console (aka kgx)
+  - terminal launches with modkey + return (enter key) instead of modkey and shift + return
 
 - slstatus
   - nothing
 
 - st
-  - to scroll 2 lines you use shift + mouse scroll, 4 lines ctrl + mscroll, ctrl + pg up/down 1 page or 8 lines (i dont remember)
-  - shell is set to fish
+  - scrolling support included, change the scrolling speed of mouse wheel by editing config.def.h, line 13. you can also scroll slower holding the shift key, or scroll one page using ctrl + pg up/down keys
+  - shell is set to fish (??)
   - font set to JetBrainsMono-Regular with pixelsize 14
   - tabspaces set to 4
   - alpha set to 0.7
