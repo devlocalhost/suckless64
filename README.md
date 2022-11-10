@@ -59,7 +59,7 @@ note: you might not need some of these. if you dont, youll need to remove them f
   - no xinerama support
   - you take a screenshot using the prt sc key (print screen)
   - modkey is the windows logo key
-  - you kill apps using modkey + q instead of c
+  - you kill apps using modkey + q instead of c (and you force kill using modshift + k [MUST MOVE other/fkill TO /usr/local/bin/ AND chmod +x IT!!])
   - default cyan color replaced with #7289da (discords old color - blurple)
   - 5 tags instead of 9
   - font replaced with JetBrainsMono-Regular, size 10
