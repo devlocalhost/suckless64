@@ -79,7 +79,7 @@ note: you might not need some of these. if you dont, youll need to remove them f
 - surf
   - homepage set to google.com
 
-font, xinitrc and wallpaper included
+font, xinitrc, scripts and wallpaper included
 
 # note
 all suckless apps are compiled, but on a 32bit laptop! you will have to recompile if you have a 64bit computer

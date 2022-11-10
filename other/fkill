@@ -1,0 +1,6 @@
+#!/bin/sh
+
+windowId=$(xdotool getwindowfocus)
+windowpid=$(xprop -id "$windowId" | grep "PID" | cut -f 2 -d "=")
+
+kill -9 "$windowpid"

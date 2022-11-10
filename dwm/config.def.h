@@ -43,9 +43,9 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
 
 static const Layout layouts[] = {
- 	{ "[]=",      tile },
- 	{ "><>",      NULL },
- 	{ "[M]",      monocle },
+ 	{ "T",      tile },
+ 	{ ">",      NULL },
+ 	{ "M",      monocle },
 };
 
 /* key definitions */
@@ -64,23 +64,25 @@ static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray
 static const char *termcmd[]  = { "st", NULL };
 
 /* my own commands */
-static const char *volup[]       = { "pactl", "set-sink-volume", "0", "+1%", NULL };
-static const char *voldown[]     = { "pactl", "set-sink-volume", "0", "-1%", NULL };
-static const char *screenshot[]  = { "flameshot", "gui", NULL };
+static const char *volup[]      = { "pactl", "set-sink-volume", "0", "+1%", NULL };
+static const char *voldown[]    = { "pactl", "set-sink-volume", "0", "-1%", NULL };
+static const char *screenshot[] = { "flameshot", "gui", NULL };
+static const char *kill9[]      = { "/usr/local/bin/fkill", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 
-    /* my own keys */
-    { 0,         XF86XK_AudioLowerVolume,      spawn,         {.v = voldown } },
-    { 0,         XF86XK_AudioRaiseVolume,      spawn,         {.v = volup } },
-    { 0,                       XK_Insert,      spawn,         {.v = screenshot } },
+    /* my own keys */ 
+    { 0,         XF86XK_AudioLowerVolume,      spawn,          {.v = voldown } },
+    { 0,         XF86XK_AudioRaiseVolume,      spawn,          {.v = volup } },
+    { 0,                       XK_Insert,      spawn,          {.v = screenshot } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,                       XK_k,      spawn,          {.v = kill9} },
 
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
-	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
+	/* { MODKEY,                       XK_k,      focusstack,     {.i = -1 } }, */
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
 	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
