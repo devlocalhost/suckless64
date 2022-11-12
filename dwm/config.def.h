@@ -12,10 +12,10 @@ static const int showbar                 = 1;  /* 0 means no bar */
 static const int topbar                  = 1;  /* 0 means bottom bar */
 static const char *fonts[]               = { "JetBrainsMono-Regular:size=10", "Font Awesome 6 Brands-Regular-400.otf", "Font Awesome 6 Free-Regular-400.otf", "Font Awesome 6 Free-Solid-900.otf" };
 static const char dmenufont[]            = "JetBrainsMono-Regular:size=10";
-static const char col_gray1[]            = "#292929";
+static const char col_gray1[]            = "#242424";
 static const char col_gray2[]            = "#444444";
-static const char col_gray3[]            = "#bbbbbb";
-static const char col_gray4[]            = "#363636";
+static const char col_gray3[]            = "#cccccc";
+static const char col_gray4[]            = "#000000";
 static const char col_cyan[]             = "#7289da";
 static const char *colors[][3]           = {
 	/*               fg         bg         border   */
