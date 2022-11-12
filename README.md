@@ -46,8 +46,7 @@ note: you might not need some of these. if you dont, youll need to remove them f
 3. pactl (for controlling volume)
 4. picom (transparency)
 5. feh (setting wallpaper)
-6. xinput (changing my mouses sensitivity, might not be needed)
-7. fish shell (needed for st) (??)
+6. fish shell (needed for st) (??)
 
 # info - whats customized/included
 - dmenu
@@ -79,7 +78,7 @@ note: you might not need some of these. if you dont, youll need to remove them f
 - surf
   - homepage set to google.com
 
-font, xinitrc, scripts and wallpaper included
+font, xinitrc, scripts and wallpapers are included in other/
 
 # note
 all suckless apps are compiled, but on a 32bit laptop! you will have to recompile if you have a 64bit computer

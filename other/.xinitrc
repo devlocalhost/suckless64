@@ -2,8 +2,7 @@ slstatus &
 flameshot &
 simplescreenrecorder --start-hidden &
 picom &
-xinput set-prop ' USB OPTICAL MOUSE' 'libinput Accel Speed' -1 &
 setxkbmap -layout us,gr -option grp:alt_shift_toggle &
-feh --bg-fill ~/Documents/suckless64/other/wallpapers/Minimal\ Mojave-1.jpg &
+feh --bg-fill ~/Downloads/Minimal\ Mojave-1.jpg &
 xset s off -dpms &
 exec dwm
