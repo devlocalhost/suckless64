@@ -68,7 +68,7 @@ note: you might not need some of these. if you dont, youll need to remove them f
   - nothing
 
 - st
-  - scrolling support included, change the scrolling speed of mouse wheel by editing config.def.h, line 13. you can also scroll slower holding the shift key, or scroll one page using ctrl + pg up/down keys
+  - scrolling support included, change the scrolling speed of mouse wheel by editing config.def.h, line 13. you can also scroll slower holding the shift key, or scroll one page using pg up/down keys
   - shell is set to fish (??)
   - font set to JetBrainsMono-Regular with pixelsize 14
   - tabspaces set to 4
