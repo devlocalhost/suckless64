@@ -1,1 +1,7 @@
 *.o
+*.rej
+/dmenu/dmenu
+/dwm/dwm
+/slstatus/slstatus
+/st/st
+/surf/surf
