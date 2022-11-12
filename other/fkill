@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# credit: https://wiki.archlinux.org/title/xorg#Display_size_and_DPI (section 7.6)
+
 windowId=$(xdotool getwindowfocus)
 windowpid=$(xprop -id "$windowId" | grep "PID" | cut -f 2 -d "=")
 
