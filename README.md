@@ -82,3 +82,6 @@ font, xinitrc, scripts and wallpapers are included in other/
 
 # note
 all suckless apps are compiled, but on a 32bit laptop! you will have to recompile if you have a 64bit computer
+
+# compiling
+well, its up to you. but if you dont know how: `make && sudo make install` (or only `sudo make install` [if youre using the tarchive version] if youre on a 32bit desktop, but recompiling might be needed) in each suckless app, or if you want to edit the configuration of an app, `vim config.def.h && cp config.def.h config.h && make && sudo make clean install` 
