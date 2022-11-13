@@ -4,5 +4,6 @@ simplescreenrecorder --start-hidden &
 picom &
 setxkbmap -layout us,gr -option grp:alt_shift_toggle &
 feh --bg-fill ~/Documents/suckless64/other/wallpapers/Minimal\ Mojave-1.jpg &
+pulseaudio --start &&
 xset s off -dpms &
 exec dwm

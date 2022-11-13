@@ -46,7 +46,7 @@ note: you might not need some of these. if you dont, youll need to remove them f
 3. pactl (for controlling volume)
 4. picom (transparency)
 5. feh (setting wallpaper)
-6. fish shell (needed for st) (??)
+6. pulseaudio (starting it)
 
 # info - whats customized/included
 - dmenu
