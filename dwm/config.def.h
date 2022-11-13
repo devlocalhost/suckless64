@@ -64,8 +64,9 @@ static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray
 static const char *termcmd[]  = { "st", NULL };
 
 /* my own commands */
-static const char *volup[]      = { "pactl", "set-sink-volume", "0", "+1%", NULL };
-static const char *voldown[]    = { "pactl", "set-sink-volume", "0", "-1%", NULL };
+static const char *volup[]      = { "pactl", "set-sink-volume", "0", "+0.5%", NULL };
+static const char *voldown[]    = { "pactl", "set-sink-volume", "0", "-0.5%", NULL };
+static const char *volmute[]    = { "pactl", "set-sink-mute", "0", "toggle", NULL };
 static const char *screenshot[] = { "flameshot", "gui", NULL };
 static const char *kill9[]      = { "/usr/local/bin/fkill", NULL };
 
@@ -76,6 +77,7 @@ static const Key keys[] = {
     { 0,         XF86XK_AudioLowerVolume,      spawn,          {.v = voldown } },
     { 0,         XF86XK_AudioRaiseVolume,      spawn,          {.v = volup } },
     { 0,                       XK_Insert,      spawn,          {.v = screenshot } },
+    { 0,                XF86XK_AudioMute,      spawn,          {.v = volmute } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_k,      spawn,          {.v = kill9} },
