@@ -66,11 +66,7 @@ static const char unknown_str[] = "??";
 static const struct arg args[] = {
 	/* function     format          argument */
     { separator,    "%s",           "| " },
-    { run_command,  " %s ",        "amixer sget Headphone | tail -1 | awk '{print $5 }' | sed 's@\\(\\[\\|\\]\\)@@g'" },
-    { run_command,  " %s ",        "amixer sget PCM | tail -1 | awk '{print $5 }' | sed 's@\\(\\[\\|\\]\\)@@g'" },
-    { run_command,  "* %s",         "amixer sget Master | tail -1 | awk '{print $5 }' | sed 's@\\(\\[\\|\\]\\)@@g'" },
-    { separator,    "%s",           " | " },
-    { keymap,       " %s",         NULL },
+	{ keymap,       " %s",         NULL },
     { separator,    "%s",           " | " },
     { ram_free,     " %s",         NULL },
     { separator,    "%s",           " | " },
